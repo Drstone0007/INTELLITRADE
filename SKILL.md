@@ -103,6 +103,6 @@ User: "Backtest Intellitrade on last 30 days of BTC data"
 
 ---
 
-*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*INTELLITRADE — Drtlemon Elite Tech Conglomerate*
 *Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
 *Proprietary. Unauthorized distribution is a violation of intellectual property.*

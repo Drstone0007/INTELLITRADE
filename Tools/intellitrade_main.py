@@ -1,4 +1,4 @@
-# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
+# INTELLITRADE — Drtlemon Elite Tech Conglomerate. Proprietary.
 """
 Intellitrade — consensus-driven BTC trading system.
 

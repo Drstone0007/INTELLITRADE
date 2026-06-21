@@ -131,7 +131,7 @@ The majority uses single models. We use 31. That's the difference.
 │         Engineering the asymmetric edge.                 │
 │         Systems over outcomes. Mathematics over emotion. │
 │                                                         │
-│         © 2026 DrTelemon. All rights reserved.           │
+│         © 2026 Drtlemon. All rights reserved.           │
 │         Proprietary. Unauthorized distribution           │
 │         is a violation of intellectual property.         │
 │                                                         │

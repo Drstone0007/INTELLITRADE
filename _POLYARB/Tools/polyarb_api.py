@@ -1,4 +1,4 @@
-# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
+# INTELLITRADE — Drtlemon Elite Tech Conglomerate. Proprietary.
 import json, time, logging
 from typing import Any
 from urllib.request import urlopen, Request

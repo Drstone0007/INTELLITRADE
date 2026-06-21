@@ -1,4 +1,4 @@
-# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
+# INTELLITRADE — Drtlemon Elite Tech Conglomerate. Proprietary.
 import json, logging, os, threading, time, asyncio
 from dataclasses import dataclass, field, asdict
 from typing import Any, Callable

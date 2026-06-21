@@ -85,5 +85,5 @@ INTELLITRADE/
 
 ---
 
-*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*INTELLITRADE — Drtlemon Elite Tech Conglomerate*
 *Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*

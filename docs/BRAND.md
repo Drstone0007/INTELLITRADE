@@ -1,6 +1,6 @@
 # BRAND — Elite Tech Conglomerate
 
-> **INTELLITRADE** is a product of **DrTelemon** — Elite Tech Conglomerate.
+> **INTELLITRADE** is a product of **Drtlemon** — Elite Tech Conglomerate.
 > Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.
 
 ---
@@ -21,7 +21,7 @@
 │         Engineering the asymmetric edge.                 │
 │         Systems over outcomes. Mathematics over emotion. │
 │                                                         │
-│         © 2026 DrTelemon. All rights reserved.           │
+│         © 2026 Drtlemon. All rights reserved.           │
 │         Proprietary. Unauthorized distribution           │
 │         is a violation of intellectual property.         │
 │                                                         │
@@ -40,7 +40,7 @@ Add the full signature block at the bottom of every README.md.
 ### Source Headers
 Add a compact-line header to every Python file:
 ```python
-# INTELLITRADE — DrTelemon Elite Tech Conglomerate
+# INTELLITRADE — Drtlemon Elite Tech Conglomerate
 # Proprietary. Unauthorized distribution prohibited.
 ```
 
@@ -51,7 +51,7 @@ Add the compact footer to all blueprint docs:
 
 ---
 
-*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*INTELLITRADE — Drtlemon Elite Tech Conglomerate*
 *Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
 ```
 

@@ -157,5 +157,5 @@ The BTC engine is designed for continuous deployment on a VPS or dedicated machi
 
 ---
 
-*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*INTELLITRADE — Drtlemon Elite Tech Conglomerate*
 *Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
