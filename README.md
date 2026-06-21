@@ -2,6 +2,10 @@
 
 **Consensus-driven autonomous trading. Two engines. One protocol.**
 
+```bash
+curl -sL https://github.com/Drstone0007/INTELLITRADE/raw/master/install.sh | bash
+```
+
 A 33-year-old nerd turned $1,000 into $946,207 trading Bitcoin with a trick he stole from hurricane forecasts. No finance degree. No trading desk. Just a method every meteorologist uses and every trader ignores.
 
 This is that method, weaponized.
