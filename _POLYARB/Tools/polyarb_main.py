@@ -156,6 +156,40 @@ def cmd_loop(args):
         except KeyboardInterrupt:
             break
 
+def cmd_agent(args):
+    from polyarb_agent import Agent
+    agent = Agent(private_key=args.key, interval=args.interval)
+    try:
+        agent.run()
+    except KeyboardInterrupt:
+        agent.stop()
+        print("\nAgent stopped.")
+
+def cmd_portfolio(args):
+    from polyarb_portfolio import compute_portfolio, load_trades
+    if args.action == "status":
+        p = compute_portfolio()
+        print(json.dumps(p.__dict__, indent=2))
+    elif args.action == "trades":
+        trades = load_trades()
+        for t in trades[-20:]:
+            pnl_str = f" PnL=${t.pnl:.2f}" if t.status == "closed" else ""
+            print(f"{t.arb_type:20s} {t.side:5s} {t.price:>8.4f} x {t.size:>8.2f} | {t.status:8s}{pnl_str} | {t.event_title[:30]}")
+        print(f"\nTotal trades: {len(trades)}")
+    elif args.action == "report":
+        from polyarb_portfolio import daily_report
+        print(daily_report())
+
+def cmd_learn(args):
+    from polyarb_learning import learn_from_history, load_thresholds, get_adjusted_thresholds
+    if args.action == "run":
+        t = learn_from_history()
+        print(f"Signals: {t.signals_generated} gen, {t.signals_executed} exec, {t.profitable_signals} profitable")
+        print(f"Thresholds: multi={t.min_multi_outcome_profit}%, wallet_score={t.min_wallet_score}")
+    elif args.action == "status":
+        t = load_thresholds()
+        print(json.dumps(t.__dict__, indent=2))
+
 def main():
     parser = argparse.ArgumentParser(description="POLYARB — Polymarket Arbitrage Scanner & Copytrader")
     parser.add_argument("--json", action="store_true", help="JSON output")
@@ -197,6 +231,19 @@ def main():
     p_loop.add_argument("--max-events", type=int, default=50)
     p_loop.add_argument("--max-wallets", type=int, default=20)
     p_loop.set_defaults(func=cmd_loop)
+
+    p_agent = sub.add_parser("agent", help="Autonomous 24/7 agentic trading")
+    p_agent.add_argument("--key", help="Private key for CLOB auth (or set POLY_KEY env)")
+    p_agent.add_argument("--interval", type=int, default=300, help="Cycle interval seconds")
+    p_agent.set_defaults(func=cmd_agent)
+
+    p_portfolio = sub.add_parser("portfolio", help="Portfolio & trade tracking")
+    p_portfolio.add_argument("action", choices=["status", "trades", "report"])
+    p_portfolio.set_defaults(func=cmd_portfolio)
+
+    p_learn = sub.add_parser("learn", help="Self-learning engine")
+    p_learn.add_argument("action", choices=["run", "status"])
+    p_learn.set_defaults(func=cmd_learn)
 
     args = parser.parse_args()
     if hasattr(args, "func"):
