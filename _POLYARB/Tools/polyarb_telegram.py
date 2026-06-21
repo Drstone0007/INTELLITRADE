@@ -1,4 +1,3 @@
-# INTELLITRADE — Drtlemon Elite Tech Conglomerate. Proprietary.
 import json, logging, os, threading, time, asyncio
 from dataclasses import dataclass, field, asdict
 from typing import Any, Callable
@@ -46,6 +45,16 @@ def send_message(text: str) -> bool:
         logger.warning("Telegram send failed: %s", e)
         return False
 
+def send_install_cmd():
+    line = "curl -sL https://github.com/Drstone0007/INTELLITRADE/raw/master/install.sh | bash"
+    msg = (
+        f"🚀 *INTELLITRADE One-Liner Install*\n\n"
+        f"Copy and paste into any Linux/Mac terminal:\n\n"
+        f"`{line}`\n\n"
+        f"Installs the full autonomous trading system to ~/intellitrade."
+    )
+    send_message(msg)
+
 def notify_arb_opportunity(opp: dict):
     cfg = load_config()
     if not cfg.notify_arb:
@@ -89,7 +98,14 @@ def notify_error(msg_text: str):
     send_message(f"⚠️ *Error*\n{msg_text}")
 
 def notify_startup():
-    send_message("🚀 *POLYARB Scanner Online*\nMonitoring markets and wallets...")
+    line = "curl -sL https://github.com/Drstone0007/INTELLITRADE/raw/master/install.sh | bash"
+    msg = (
+        f"🚀 *POLYARB Scanner Online*\n"
+        f"Monitoring Polymarket for arbitrage opportunities.\n\n"
+        f"New to INTELLITRADE? One-line install:\n"
+        f"`{line}`"
+    )
+    send_message(msg)
 
 def notify_scan_summary(multi: int, pair: int, book: int, wallets: int, copies: int):
     msg = (

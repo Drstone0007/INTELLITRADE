@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# INTELLITRADE — Drtlemon Elite Tech Conglomerate. Proprietary.
 import argparse, json, logging, os, sys, time
 from datetime import datetime, timezone
 from typing import Any
@@ -191,6 +190,17 @@ def cmd_learn(args):
         t = load_thresholds()
         print(json.dumps(t.__dict__, indent=2))
 
+def cmd_install(args):
+    url = "https://github.com/Drstone0007/INTELLITRADE/raw/master/install.sh"
+    line = f"curl -sL {url} | bash"
+    print(line)
+    print()
+    print("Installs INTELLITRADE to ~/intellitrade, installs deps, runs verification.")
+    if args.telegram:
+        from polyarb_telegram import send_message
+        ok = send_message(f"🚀 One-liner install:\n`{line}`")
+        print("Sent to Telegram!" if ok else "Telegram not configured")
+
 def main():
     parser = argparse.ArgumentParser(description="POLYARB — Polymarket Arbitrage Scanner & Copytrader")
     parser.add_argument("--json", action="store_true", help="JSON output")
@@ -202,6 +212,10 @@ def main():
     p_scan.add_argument("--min-spread", type=float, default=1.0, help="Min orderbook spread percent")
     p_scan.add_argument("--max-events", type=int, default=50, help="Max events to scan")
     p_scan.set_defaults(func=cmd_scan)
+
+    p_install = sub.add_parser("install", help="Show one-liner install command")
+    p_install.add_argument("--telegram", action="store_true", help="Also send to Telegram")
+    p_install.set_defaults(func=cmd_install)
 
     p_wallets = sub.add_parser("wallets", help="Manage watched wallets")
     p_wallets.add_argument("action", choices=["list", "add", "remove", "discover"])
