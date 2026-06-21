@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
 import argparse, json, logging, os, sys, time
 from datetime import datetime, timezone
 from typing import Any

@@ -100,3 +100,9 @@ User: "Backtest Intellitrade on last 30 days of BTC data"
 - Kelly criterion can suggest very large positions during high-conviction periods — use a fractional Kelly (0.25-0.5) in production.
 - The system has no opinion on most candles — expect 80%+ flat time.
 - Backtest results are NOT guaranteed to predict live performance. Market regimes shift.
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
+*Proprietary. Unauthorized distribution is a violation of intellectual property.*

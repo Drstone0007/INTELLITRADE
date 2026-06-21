@@ -183,3 +183,10 @@ The bot sends structured messages for every event:
 | Daily report | 📊 P&L summary | Every 288 cycles |
 
 Messages are Markdown-formatted. The bot token and chat ID are stored locally in `telegram_config.json` (gitignored).
+
+---
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*

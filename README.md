@@ -114,3 +114,25 @@ The majority uses single models. We use 31. That's the difference.
 ---
 
 **Private system.** Not for redistribution.
+
+---
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   ██████  ██████  ████████ ██████  ███████ ██      ███  │
+│  ██      ██    ██    ██    ██   ██ ██      ██      ███  │
+│  ██      ██    ██    ██    ██████  █████   ██      ███  │
+│  ██      ██    ██    ██    ██   ██ ██      ██           │
+│   ██████  ██████     ██    ██   ██ ███████ ███████ ███  │
+│                                                         │
+│              Elite Tech Conglomerate                     │
+│                                                         │
+│         Engineering the asymmetric edge.                 │
+│         Systems over outcomes. Mathematics over emotion. │
+│                                                         │
+│         © 2026 DrTelemon. All rights reserved.           │
+│         Proprietary. Unauthorized distribution           │
+│         is a violation of intellectual property.         │
+│                                                         │
+└─────────────────────────────────────────────────────────┘

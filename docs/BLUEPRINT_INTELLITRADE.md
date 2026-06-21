@@ -152,3 +152,10 @@ python3 _INTELLITRADE/Tools/intellitrade_main.py configure  # Settings
 ```
 
 The BTC engine is designed for continuous deployment on a VPS or dedicated machine. It requires CCXT exchange API keys and a funded account. For a complete autonomous system, pair it with the Polymarket engine through the agent layer.
+
+---
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*

@@ -172,4 +172,11 @@ The agent enters ERROR state on any unhandled exception.
         │  12 learns (every 1 hr)                             │
         │  1 report (every 24 hrs)                            │
         └─────────────────────────────────────────────────────┘
+
+---
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
 ```

@@ -265,3 +265,8 @@ This software is provided for educational and research purposes only. Trading cr
 **Jurisdictional warning**: Prediction markets are regulated or prohibited in some jurisdictions. Ensure compliance with local laws before operating this system.
 
 *No finance degree. No trading desk. Just math.*
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*

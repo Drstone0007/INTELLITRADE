@@ -89,3 +89,9 @@ Config files at `~/.claude/skills/_POLYARB/` (gitignored):
 - `signal_log.json` — Signal generation history
 - `learned_thresholds.json` — Self-adjusted thresholds
 - `agent_state.json` — Agent state machine
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
+*Proprietary. Unauthorized distribution is a violation of intellectual property.*

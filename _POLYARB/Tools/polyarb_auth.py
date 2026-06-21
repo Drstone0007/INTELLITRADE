@@ -1,3 +1,4 @@
+# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
 import json, logging, os, time
 from dataclasses import dataclass
 from eth_account import Account

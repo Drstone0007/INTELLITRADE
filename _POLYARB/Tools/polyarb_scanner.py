@@ -1,3 +1,4 @@
+# INTELLITRADE — DrTelemon Elite Tech Conglomerate. Proprietary.
 import json, logging, time
 from dataclasses import dataclass, field
 from typing import Any

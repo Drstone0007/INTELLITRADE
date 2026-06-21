@@ -82,3 +82,8 @@ INTELLITRADE/
 | API credentials | Order placement | L2 scoped, rotating |
 | Bot token | Telegram spam | Chat-ID scoped |
 | Config files | Wallet addresses | Gitignored, local only |
+
+---
+
+*INTELLITRADE — DrTelemon Elite Tech Conglomerate*
+*Engineering the asymmetric edge. Systems over outcomes. Mathematics over emotion.*
